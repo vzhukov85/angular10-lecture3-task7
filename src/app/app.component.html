@@ -3,14 +3,16 @@
   placeholder="Введи и нажми Enter"
   aria-label="Number"
   mapInput
-  (keydown.enter) = "cache($event.target.value)"
+  cached
   [formControl]="myControl"
   [matAutocomplete]="auto"
 />
 
 <mat-autocomplete #auto="matAutocomplete">
   <mat-option *ngFor="let option of caches()" [value]="option">
-    {{ option }}
-  </mat-option>
-</mat-autocomplete>
-
+   {{ option }}
+</mat-option>
+  
+<!--
+<mat-autocomplete #auto="matAutocomplete" *getCache='options'>
+  -->

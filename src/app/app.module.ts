@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CachedDirective } from './cached.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CachedDirective
   ],
   imports: [
     BrowserModule,
